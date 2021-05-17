@@ -1,0 +1,15 @@
+.leaflet-container {
+    width: 100%;
+    height: 100vh;
+}
+
+.marker-cluster-custom {
+  background: rgb(129, 182, 212);
+  border: 3px solid #000000;
+  border-radius: 50%;
+  color: #000000;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  width: 30px;
+}
