@@ -18,7 +18,7 @@ class Map extends React.Component {
       return L.divIcon({
         html: cluster.getChildCount(), //'<span>${cluster.getChildCount()}</span>',
         className: 'marker-cluster-custom',
-        iconSize: L.point(30, 30, true)
+        iconSize: L.point(30 + (cluster.getChildCount() / 1.5), 30 + (cluster.getChildCount() / 1.5), true)
       });
     }
 
@@ -36,7 +36,7 @@ class Map extends React.Component {
         zoomToBoundsOnClick={true}
         spiderfyOnMaxZoom={false} 
         removeOutsideVisibleBounds={true}
-        maxClusterRadius={60}
+        maxClusterRadius={55}
         showCoverageOnHover={false} 
       >
       {narrativeData.features.map(narrative => (
